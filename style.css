@@ -1,0 +1,134 @@
+:root {
+  --global-color: #06798f; /* Global variable */
+}
+
+
+/* Center the table */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+/* Make the table responsive */
+.table-container {
+  width: 100%;
+  max-width: 982px; /* Adjust as needed */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th,
+td {
+  white-space: nowrap;
+  /* border: 1px solid #000000; */
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+@media (max-width: 982px) {
+  th,
+  td {
+    font-size: 12px;
+  }
+}
+.no-border {
+  border: none;
+}
+.reactive-non-metal {
+  background-color: #E2EEFF;
+  border-color: #E2EEFF;
+  color: #0060f0;
+}
+.alkali-metals{
+  background-color: #D8f8ff;
+  border-color: #D8f8ff;
+  color: #06798f;
+}
+.alkaline-earth-metals{
+  background-color: #ffe7e7;
+  border-color: #ffe7e7;
+  color: #d60024;
+}
+.transition-metals{
+  background-color: #F3E8FD;
+  border-color: #F3E8FD;
+  color:#6232EC
+}
+.actinides{
+  background-color: #FFE6D4;
+  border-color: #FFE6D4;
+  color: #C73200;
+}
+.lanthanides{
+  background-color: #DFF3FF;
+  border-color: #DFF3FF;
+  color:#003355;
+}
+.unknown-properties{
+  background-color: #E7E7EA;
+  border-color:#E7E7EA;
+}
+.post-transition-metals{
+  background-color: #D6F9E8;
+  border-color: #D6F9E8;
+  color: #028545
+}
+.nobel-gases{
+background-color: #FFE7EB;
+border-color: #FFE7EB;
+color: #CD1D5E;
+}
+.metalloids{
+  background-color: #FEF7E0;
+  border-color: #FEF7E0;
+  color: #945700;
+}
+.legends {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.no-bg{
+  background-color: transparent;
+}
+ul.alkali-metals-bullet li::marker {
+  color: #06798f;
+}
+ul.alkaline-earth-metals-bullet li::marker {
+  color: #d60024;
+}
+ul.metalloids-bullet li::marker {
+  color: #945700;
+}
+ul.transition-metals-bullet li::marker {
+  color: #6232EC
+}
+ul.post-transition-metals-bullet li::marker {
+  color: #028545
+}
+
+ul.nobel-gases-bullet li::marker {
+  color: #CD1D5E;
+}
+ul.reactive-non-metal-bullet li::marker {
+  color: #0060f0;
+}
+ul.lanthanides-bullet li::marker {
+  color: #003355;
+}
+ul.actinides-bullet li::marker {
+  color: #C73200;
+}
